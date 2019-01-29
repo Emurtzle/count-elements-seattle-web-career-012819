@@ -4,11 +4,7 @@ def count_elements(array)
   new_hash = {}
 
   array.each do |element|
-    if new_hash.keys.include?(element) == false
-      new_hash[element] = 1
-    else
-      new_hash[element] += 1
-    end
+    new_hash[element] += 1
     #binding.pry
   end
   #binding.pry
